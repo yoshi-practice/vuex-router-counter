@@ -1,4 +1,4 @@
-# vuex-router
+# vuex-router-counter
 
 ## Project setup
 ```
