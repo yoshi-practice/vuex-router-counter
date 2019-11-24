@@ -5,11 +5,21 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    count: 5
   },
   mutations: {
+    increment(state){
+      state.count++
+    },
+    decrement(state){
+      state.count--
+    }
   },
   actions: {
-  },
-  modules: {
+    increment: ({ commit }) => {
+      setTimeout(() => {
+        commit('increent')
+      }, 5000)
+    }
   }
 })
